@@ -1,0 +1,39 @@
+<div id="pixelid"></div>
+<!-- Facebook Pixel Code -->
+<script type="text/javascript">// <![CDATA[
+var params = window
+    .location
+    .search
+    .replace('?','')
+    .split('&')
+    .reduce(
+        function(p,e){
+            var a = e.split('=');
+            p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+            return p;
+        },
+        {}
+    );
+
+    if(typeof params['pixel'] == 'undefined') 
+        {}
+    else {
+        var myImg = document.createElement("img");
+        myImg.src = "https://www.facebook.com/tr?id=" + params['pixel'] + "&ev=Lead&noscript=1";
+        var a = document.querySelector("#pixelid");
+        if (a) a.appendChild(myImg);
+    }
+// ]]></script>
+<!--?php $pixelid = isset($_GET['pixel']) ? $_GET['pixel'] : '';
+        if ($pixelid != '') {
+            echo "<img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=$pixelid&ev=Lead&noscript=1'/-->"<!-- End Facebook Pixel Code --> Mulțumesc! Comanda dvs. este acceptat!<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=320" /><meta name="MobileOptimized" content="width=320" />
+<div id="wrapper">
+<div class="container"><span class="decoration"> </span>
+<div class="order-block">
+<div class="text-holder">
+<h2><span>Success!</span> Thank you for your order!</h2>
+<p>Our operator will contact you to confirm your order. If you have the answering machine connected, disconnect it, so that our operator can contact you.<br /> Shipping is by courier or by post. Payment - upon receipt!</p>
+</div>
+</div>
+</div>
+</div>
